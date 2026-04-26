@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chic Déclic Photographie</title>
+<style>
+body{margin:0;background:#fff7f8;font-family:Arial,sans-serif}
+.page{position:relative;max-width:1023px;margin:auto}
+.page img{width:100%;display:block}
+
+.lamapix-form{
+position:absolute;
+left:17.7%;
+top:49.2%;
+width:64.2%;
+height:3.2%;
+display:flex;
+z-index:20;
+}
+
+.lamapix-form input[type="text"]{
+width:66.2%;
+height:100%;
+border:none;
+background:#ffffff;
+outline:none;
+padding-left:18px;
+font-size:17px;
+color:#333;
+}
+
+.lamapix-form input[type="submit"]{
+width:33.8%;
+border:none;
+background:transparent;
+cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+<img src="page.png">
+<form class="lamapix-form" method="post" action="https://www.lamapix.com/lamapix.com/index.php">
+<input type="text" name="code" placeholder="Votre code galerie">
+<input type="submit">
+</form>
+</div>
+</body>
+</html>
