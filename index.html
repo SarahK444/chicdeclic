@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chic Déclic Photographie</title>
+
 <style>
 html, body {
   margin: 0;
@@ -24,60 +25,46 @@ html, body {
   height: auto;
 }
 
-/* Formulaire corrigé : superposé exactement sur la zone du visuel */
+/* FORMULAIRE (UN SEUL, PROPRE) */
 .lamapix-form {
   position: absolute;
-  left: 25.0%;
-  top: 56.5%;
-  width: 51.9%;
-  height: 5.15%;
+  left: 25%;
+  top: 58%;
+  width: 52%;
+  height: 5%;
   display: flex;
   z-index: 20;
 }
 
 .lamapix-form input[type="text"] {
-  width: 65.5%;
+  width: 66%;
   height: 100%;
   border: 1px solid #d7d7d7;
   background: #ffffff;
-  color: #333333;
+  padding-left: 20px;
+  font-size: 16px;
   outline: none;
-  padding-left: 22px;
-  font-size: clamp(12px, 1.35vw, 22px);
-  box-sizing: border-box;
-  border-radius: 6px 0 0 6px;
-}
-
-.lamapix-form input[type="text"]::placeholder {
-  color: #777777;
 }
 
 .lamapix-form input[type="submit"] {
-  width: 34.5%;
-  height: 100%;
+  width: 34%;
   border: none;
   background: transparent;
-  color: transparent;
   cursor: pointer;
-  padding: 0;
-}
-
-@media (max-width: 700px) {
-  .lamapix-form input[type="text"] {
-    padding-left: 8px;
-    font-size: 12px;
-  }
 }
 </style>
 </head>
-<body>
-  <main class="page">
-    <img src="page.png" alt="Chic Déclic Photographie - Galerie privée famille et enfants">
 
-    <form class="lamapix-form" target="_top" method="post" action="https://www.lamapix.com/lamapix.com/index.php">
-      <input type="text" name="code" placeholder="Votre code galerie" required>
-      <input type="submit" value="Accéder à ma galerie">
-    </form>
-  </main>
+<body>
+
+<div class="page">
+  <img src="page.png">
+
+  <form class="lamapix-form" method="post" action="https://www.lamapix.com/lamapix.com/index.php">
+    <input type="text" name="code" placeholder="Votre code galerie">
+    <input type="submit" value="">
+  </form>
+</div>
+
 </body>
 </html>
